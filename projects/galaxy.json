@@ -1,0 +1,27 @@
+[
+  {
+    "id": "qin2023ram",
+    "title": "Restore Anything with Masks: Leveraging Mask Image Modeling for Blind All-in-One Image Restoration",
+    "authors": [
+      "Chu-Jie Qin",
+      "Rui-Qi Wu Jin",
+      "Zi-Kun Liu",
+      "Xin Lin",
+      "Chunle Guo",
+      "Chongyi Li"
+    ],
+    "abstract": "Image retouching aims to enhance the visual quality of photos. Considering the different aesthetic preferences of users, the target of retouching is subjective. However, current retouching methods mostly adopt deterministic models, which not only neglects the style diversity in the expert-retouched results and tends to learn an average style during training, but also lacks sample diversity during inference. In this paper, we propose a diffusion-based method, named DiffRetouch. Thanks to the excellent distribution modeling ability of diffusion, our method can capture the complex fine-retouched distribution covering various visual-pleasing styles in the training data. Moreover, four image attributes are made adjustable to provide a user-friendly editing mechanism. By adjusting these attributes in specified ranges, users are allowed to customize preferred styles within the learned fine-retouched distribution. Additionally, the affine bilateral grid and contrastive learning scheme are introduced to handle the problem of texture distortion and control insensitivity respectively. Extensive experiments have demonstrated the superior performance of our method on visually appealing and sample diversity. The code will be made available to the community.",
+    "url": "https://arxiv.org/abs/2409.19403",
+    "tags": [
+      "All-in-One Restoration",
+      "Mask Image Modeling"
+    ],
+    "homepage": "https://dragonis.github.io/projects/ram-eccv24/",
+    "published": "ECCV 2024",
+    "pos": [
+      9.434100151062012,
+      11.855199813842773,
+      -5.724899768829346
+    ]
+  }
+]

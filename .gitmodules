@@ -1,0 +1,3 @@
+[submodule "my-soarxiv"]
+	path = my-soarxiv
+	url = http://github.com/Srameo/my-soarxiv/
