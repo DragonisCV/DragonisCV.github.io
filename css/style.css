@@ -258,3 +258,58 @@ td {
         max-width: 100%;
     }
 }
+
+.focus-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 8px 0 12px 0;
+}
+
+.focus-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #4f5b66;
+    background-color: #f1f3f5;
+    border: 1px solid #e2e6ea;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.exp-text {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.exp-details {
+    margin-top: 10px;
+}
+
+.exp-details summary {
+    font-size: 14px;
+    color: #4a76a8;
+    cursor: pointer;
+    list-style: none;
+    outline: none;
+}
+
+.exp-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.exp-details summary::before {
+    content: "▶ ";
+    font-size: 12px;
+}
+
+.exp-details[open] summary::before {
+    content: "▼ ";
+}
+
+.exp-details p {
+    margin-top: 8px;
+}

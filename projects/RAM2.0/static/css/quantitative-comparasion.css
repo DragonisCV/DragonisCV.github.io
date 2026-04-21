@@ -1,0 +1,41 @@
+.quant-section {
+    position: relative; /* 保留，方便以后需要做局部定位 */
+  }
+  
+  /* 改为“非绝对定位”，用流式布局居中摆放 */
+  .quant-selector {
+    position: static;           /* 关键：不再 absolute */
+    margin: 0 auto 12px;        /* 上面紧贴标题，下面留 12px 间距 */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.7);
+    width: max-content;         /* 让背景包裹内容并便于居中 */
+  }
+  .quant-selector label {
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.image-selector select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+  
+  /* 确保图片按正常流显示 */
+  .quantImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: static !important;
+    /* 无需 z-index，因为不叠了 */
+  }
+  

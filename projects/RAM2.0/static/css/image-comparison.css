@@ -1,0 +1,239 @@
+.comparison-container {
+  position: relative;
+  justify-content: center;
+  width: 750px;
+  height: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+.image-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#image1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#image2-container {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#image2 {
+  position: absolute;
+  width: 750px !important;
+  height: 100%;
+  object-fit: cover;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  max-width: none !important; /* 取消 Bulma 的 max-width */
+}
+
+.slider {
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: white;
+  left: 50%;
+  cursor: ew-resize;
+  z-index: 10;
+}
+
+.slider-button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: ew-resize;
+}
+
+.method-selector {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.left-selector {
+  left: -20px;
+}
+
+.right-selector {
+  right: -20px;
+}
+
+.method-button {
+  display: block;
+  margin: 5px;
+  padding: 8px 12px;
+  background: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 120px;
+}
+
+.method-button:hover {
+  background: #e0e0e0;
+}
+
+.method-button.active {
+  background: #4caf50;
+  color: white;
+}
+
+.image-selector {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.image-selector label {
+  color: white;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.image-selector select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  background: white;
+  cursor: pointer;
+}
+
+.filter-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  gap: 20px;
+  z-index: 20;
+}
+
+.filter-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.filter-control label {
+  margin-bottom: 5px;
+}
+
+.filter-control input {
+  width: 150px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 5px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+.readme-container {
+  z-index: 1;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: calc(70px * 5 + 4 * 5px + 30px);
+}
+
+.readme-box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.readme-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.readme-content {
+  line-height: 1.4;
+}
+
+/* 放大镜容器：固定在对比容器右上角 */
+.magnifier {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  width: 320px; /* 两个 160px 小窗并排 */
+  height: 160px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+  pointer-events: none; /* 不拦截鼠标事件，滑块可拖 */
+}
+
+/* 左右两块放大窗 */
+.magnifier-pane {
+  width: 160px;
+  height: 160px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /* 为了更清晰，可根据需要添加边线 */
+}
+
+/* 小屏隐藏放大镜，避免遮挡 */
+@media (max-width: 768px) {
+  .magnifier {
+    display: none;
+  }
+}
