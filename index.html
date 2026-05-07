@@ -1,25 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Chu-Jie Qin</title>
     <meta name="author" content="Chu-Jie Qin">
+    <meta name="description" content="Chu-Jie Qin is a PhD student at Nankai University working on computer vision, image restoration, computational photography, diffusion models, and aesthetic agents.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Chu-Jie Qin">
 	<meta property="og:description" content="PhD student, Nankai University">
-    <meta property="og:image" content="/assets/me.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://DragonisCV.github.io/assets/me.jpeg">
 	<meta property="og:url" content="https://DragonisCV.github.io/">
+    <link rel="canonical" href="https://DragonisCV.github.io/">
 	<!-- <meta name="twitter:card" content="summary_large_image"> -->
     <!-- <link rel="apple-touch-icon" href="/assets/paper_teaser/ucsd-logo.png"> -->
     <!-- <link rel="icon" type="image/png" href="/assets/paper_teaser/ucsd-logo.png"> -->
     <!-- <link rel="manifest" href="/assets/paper_teaser/site.webmanifest"> -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
 
-<!-- <div class="navbar">
-    <a href="#about">About</a>
-    <a href="#news">News</a>
-    <a href="#publications">Publications</a>
-    <a href="#experiences">Experiences</a>
-    <a href="#contact">Contact</a>
-</div> -->
+<nav class="site-nav" aria-label="Primary navigation">
+    <div class="site-nav-inner">
+        <a class="site-mark" href="#about">Chu-Jie Qin</a>
+        <div class="site-nav-links">
+            <a href="#news">News</a>
+            <a href="#publications">Publications</a>
+            <a href="#experiences">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
 
 <div class="header noselect" id="about">
     <div class="content row">
@@ -32,10 +44,10 @@
                 PhD student, Nankai University
             </div>
             <div class="header-links">
-                <a class="btn" href="#contact">Email</a> /
-                <a class="btn" href="https://scholar.google.com/citations?user=pGi3qAsAAAAJ&hl=zh-CN&oi=sra">Google Scholar</a> /
-                <a class="btn" href="https://github.com/DragonisCV">GitHub</a> /
-                <a class="btn" href="https://www.overleaf.com/read/zqsmrzvqggvm#c38e9e">CV</a>
+                <a class="btn" href="#contact">Email</a>
+                <a class="btn" href="https://scholar.google.com/citations?user=pGi3qAsAAAAJ&hl=zh-CN&oi=sra" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                <a class="btn" href="https://github.com/DragonisCV" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="btn" href="https://www.overleaf.com/read/zqsmrzvqggvm#c38e9e" target="_blank" rel="noopener noreferrer">CV</a>
             </div>
             <div>
                 <p>
@@ -43,11 +55,32 @@
                     His research interests include computer vision and deep learning, previously focusing on computational photography and Diffusion Model.
                 </p>
             </div>
+            <div class="research-tags" aria-label="Research interests">
+                <span class="research-tag">Image Restoration</span>
+                <span class="research-tag">Computational Photography</span>
+                <span class="research-tag">Diffusion Models</span>
+                <span class="research-tag">Aesthetic Agents</span>
+                <span class="research-tag">VLM</span>
+            </div>
+            <div class="hero-stats" aria-label="Research highlights">
+                <div class="hero-stat">
+                    <strong>ECCV 2024</strong>
+                    <span>All-in-one restoration</span>
+                </div>
+                <div class="hero-stat">
+                    <strong>3+ Projects</strong>
+                    <span>RAM, RawDiffusion, LVRAE</span>
+                </div>
+                <div class="hero-stat">
+                    <strong>Industry</strong>
+                    <span>DJI, Huawei, Samsung</span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="content" style="padding-bottom: 64px;">
+<main class="content main-content">
     <!-- Pinned -->
     <!-- <div id="pinned" class="noselect">
         <div class="pinned-container">
@@ -77,39 +110,103 @@
         </div>
     </div>
 
+    <!-- Research Focus -->
+    <section id="research">
+        <h2 class="noselect">Research Focus</h2>
+        <div class="focus-grid">
+            <article class="focus-card">
+                <span class="focus-kicker">Restoration</span>
+                <h3>All-in-one image restoration</h3>
+                <p>Building robust representation learning methods that handle mixed, blind, and out-of-distribution degradations.</p>
+            </article>
+            <article class="focus-card">
+                <span class="focus-kicker">Photography</span>
+                <h3>Computational imaging systems</h3>
+                <p>Connecting low-level vision models with practical RAW capture, restoration, and deployment constraints.</p>
+            </article>
+            <article class="focus-card">
+                <span class="focus-kicker">Agents</span>
+                <h3>Aesthetic and multimodal agents</h3>
+                <p>Exploring VLM-assisted workflows for image retouching, subjective preference modeling, and creative editing.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="featured-projects">
+        <h2 class="noselect">Featured Projects</h2>
+        <div class="project-grid">
+            <a class="project-card" href="https://DragonisCV.github.io/projects/RAM/index.html">
+                <span class="project-year">ECCV 2024</span>
+                <strong>RAM</strong>
+                <span>Restore Anything with Masks for blind all-in-one image restoration.</span>
+            </a>
+            <a class="project-card" href="https://DragonisCV.github.io/projects/RAM2.0/index.html">
+                <span class="project-year">Arxiv 2025</span>
+                <strong>RAM++</strong>
+                <span>Adaptive mask representation learning for robust restoration.</span>
+            </a>
+            <a class="project-card" href="/projects">
+                <span class="project-year">Arxiv 2026</span>
+                <strong>LVRAE</strong>
+                <span>Improving reconstruction of representation autoencoder.</span>
+            </a>
+        </div>
+    </section>
+
     <!-- Publications -->
     <div id="publications" class="noselect">
-        <h2 class="noselect">Publications <span style="font-size: 12px; color: #666;">(click to sort: 
-            <a class="btn active" id="sort-author" onclick="sortPublications('author')">as core contributor</a> / 
-            <a class="btn" id="sort-date" onclick="sortPublications('date')">by date</a> /
-            <a class="btn" href="/projects" style="font-size: 16px;">By GALAXY!</a>)</span></h2>
-        <p>* Equal contribution. # Corresponding author. Representative papers are <span style="background-color: #fff8df">highlighted</span>.</p>
-        <div class="publication row clearfix" data-author="Chu-Jie Qin" data-date="202507">
+        <h2 class="noselect">Publications <span class="sort-note">
+            <a class="btn active" id="sort-author" onclick="sortPublications('author')">Core contributor</a>
+            <a class="btn" id="sort-date" onclick="sortPublications('date')">By date</a>
+            <a class="btn" href="/projects">Galaxy</a>
+        </span></h2>
+        <p class="publication-meta">* Equal contribution. # Corresponding author. Representative papers are <span style="background-color: #fff8df">highlighted</span>.</p>
+        <div class="filter-controls" aria-label="Publication filters">
+            <button class="filter-btn active" type="button" data-filter="all">All</button>
+            <button class="filter-btn" type="button" data-filter="core">Core</button>
+            <button class="filter-btn" type="button" data-filter="restoration">Restoration</button>
+            <button class="filter-btn" type="button" data-filter="representation">Representation</button>
+        </div>
+        <div class="publication row clearfix" data-author="Chu-Jie Qin" data-date="202602" data-tags="core representation">
             <div class="row-media" style="height: 120px; background-image: url(assets/paper_teaser/lrvae.png);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://arxiv.org/abs/2602.08620">Improving Reconstruction of Representation Autoencoder</a><br/>
                 Siyu Liu*, <span class="bold">Chu-Jie Qin</span>*, Hubery Yin, Qixin Yan, Zheng-Peng Duan, Chen Li, Jing Lyu, Chun-Le Guo, Chongyi Li† <br/>
-                <span class="italic">Arxiv</span>, 2026 <br/>
-                <a class="btn btn-red" href="https://arxiv.org/abs/2602.08620">project[TBD]</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2602.08620">paper</a> / <a class="btn btn-dark" href="bibtex/qin2026lvrae.html">bibtex</a>
+                <span class="italic">Arxiv</span>, 2026
+                <div class="publication-actions">
+                    <a class="btn btn-red" href="https://arxiv.org/abs/2602.08620" target="_blank" rel="noopener noreferrer">Project TBD</a>
+                    <a class="btn btn-red" href="https://arxiv.org/abs/2602.08620" target="_blank" rel="noopener noreferrer">Paper</a>
+                    <a class="btn btn-dark" href="bibtex/qin2026lvrae.html">BibTeX</a>
+                </div>
             </div>
         </div>  
-        <div class="publication row clearfix" data-author="Chu-Jie Qin" data-date="202507">
+        <div class="publication row clearfix highlight" data-author="Chu-Jie Qin" data-date="202509" data-tags="core restoration representation">
             <div class="row-media" style="height: 120px; background-image: url(assets/paper_teaser/ram_plus.png);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://DragonisCV.github.io/projects/RAM2.0/">RAM++: Robust Representation Learning via Adaptive Mask for All-in-One Image Restoration</a><br/>
                 Zilong Zhang*, <span class="bold">Chu-Jie Qin</span>*, Chunle Guo, Yong Zhang, Chao Xue, Ming-Ming Cheng, Chongyi Li† <br/>
-                <span class="italic">Arxiv</span>, 2025 <br/>
-                <a class="btn btn-red" href="https://DragonisCV.github.io/projects/RAM2.0/index.html">project</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2509.12039">paper</a> / <a class="btn btn-dark" href="bibtex/qin2025ramplus.html">bibtex</a>
+                <span class="italic">Arxiv</span>, 2025
+                <div class="publication-actions">
+                    <a class="btn btn-red" href="https://DragonisCV.github.io/projects/RAM2.0/index.html">Project</a>
+                    <a class="btn btn-red" href="https://arxiv.org/abs/2509.12039" target="_blank" rel="noopener noreferrer">Paper</a>
+                    <a class="btn btn-dark" href="bibtex/qin2025ramplus.html">BibTeX</a>
+                </div>
             </div>
         </div>    
-        <div class="publication row clearfix" data-author="Chu-Jie Qin" data-date="202407">
+        <div class="publication row clearfix highlight" data-author="Chu-Jie Qin" data-date="202407" data-tags="core restoration">
             <div class="row-media" style="height: 120px; background-image: url(assets/paper_teaser/ram.png);"></div>
             <div class="row-text">
                 <a class="publication-title bold" href="https://DragonisCV.github.io/projects/RAM/index.html">Restore Anything with Masks: Leveraging Mask Image Modeling for Blind All-in-One Image Restoration</a><br/>
                 <span class="bold">Chu-Jie Qin</span>, Rui-Qi Wu, Zikun Liu, Xin Lin, Chun-Le Guo, Hyun Hee Park, Chongyi Li#. <br/>
-                <span class="italic">ECCV</span>, 2024 <br/>
-                <a class="btn btn-red" href="https://DragonisCV.github.io/projects/RAM/index.html">project</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2409.19403">paper</a> / <a class="btn btn-dark" href="bibtex/qin2023ram.html">bibtex</a>
-            </div> </div>
+                <span class="italic">ECCV</span>, 2024
+                <div class="publication-actions">
+                    <a class="btn btn-red" href="https://DragonisCV.github.io/projects/RAM/index.html">Project</a>
+                    <a class="btn btn-red" href="https://arxiv.org/abs/2409.19403" target="_blank" rel="noopener noreferrer">Paper</a>
+                    <a class="btn btn-dark" href="bibtex/qin2023ram.html">BibTeX</a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Experience -->
@@ -120,7 +217,7 @@
                 <table>
                     <tr>
                         <td class="icon">
-                            <img style="width: 125px;" src="assets/experience/DJI.png" alt="DJI"></a><br>
+                            <img style="width: 125px;" src="assets/experience/DJI.png" alt="DJI"><br>
                             <span style="font-size: 13px;">2025/10 - Right Now <br> Shenzhen, China</span>
                         </td>
                         <td class="description">
@@ -139,7 +236,11 @@
                             <details class="exp-details">
                                 <summary>Reflection</summary>
                                 <p class="exp-text">
-                                Working with the amazing Rising Wang and Zilong Zhang has taught me a great deal. The free and open research environment has made me feel genuinely happy. 
+                                    Working on this 24/7 has been both demanding and rewarding.
+                                    It revealed the gap between research and practical deployment,
+                                    and helped me find clearer direction.
+                                    Special thanks to Siyu Liu and PengFei Yang for their support.
+                                </p>
                             </details>
                         </td>
                     </tr>
@@ -149,7 +250,7 @@
                 <table>
                     <tr>
                         <td class="icon">
-                            <img style="width: 125px;" src="assets/experience/huawei.png" alt="Huawei"></a><br>
+                            <img style="width: 125px;" src="assets/experience/huawei.png" alt="Huawei"><br>
                             <span style="font-size: 13px;">2024/05 - 2025/09 <br> Hangzhou, China</span>
                         </td>
                         <td class="description">
@@ -213,9 +314,9 @@
     </div> -->
 
     <!-- Education -->
-    <div>
+    <div id="education">
         <h2 class="noselect">Education</h2>
-        <div  class="noselect">
+        <div class="education-list noselect">
             <span><strong>2023/09 - Present</strong>, I am a Ph.D student at <a href="https://cc.nankai.edu.cn/">College of Computer Science, Nankai University</a>, under the supervision of Prof. <a href="https://mmcheng.net/">Ming-Ming Cheng</a>.</span>
             <br/><br/>
             <span><strong>2019/09 - 2023/07</strong>, I was an undergraduate student at <a href="https://cc.nankai.edu.cn/">College of Computer Science, Nankai University</a>.</span>
@@ -223,7 +324,7 @@
     </div>
 
     <!-- Contact -->
-    <div class="noselect">
+    <div class="contact-panel noselect">
         <a id="contact"></a>
         <h2>Contact</h2>
         You are very welcome to contact me regarding my research, offer some startup ideas, or just say hi.<br/>
@@ -231,10 +332,10 @@
         <br/>
         I can be contacted directly at <span class="bold">chujie.qin</span> [at] <span class="bold">mail.nankai.edu.cn</span>
     </div>
-</div>
+</main>
 
-<div id="footer-clusrmaps" style="text-align: center; margin-bottom: 20px;">
-    <div id="clustrmaps-widget" style="width: 100px; margin: 0 auto; overflow: hidden;">
+<div id="footer-clusrmaps">
+    <div id="clustrmaps-widget">
         <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=VEk4VYKnI9sCCEXCgdKor_rhcYKrCEm6C9mIRceo1og"></script>
     </div>
 </div>
@@ -245,52 +346,12 @@
     </div>
 </div>
 
-<style>
-.particle-text {
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-}
-
-.particle-text .hover-content {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: max-content;
-    white-space: nowrap;
-}
-
-.particle-text:hover .hover-content {
-    display: inline-block;
-}
-
-.particle-text .particle-placeholder {
-    visibility: visible;
-}
-
-.particle-text:hover .particle-placeholder {
-    visibility: hidden;
-}
-
-.particle-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 10;
-    opacity: 0.7;
-}
-
-.particle-text:hover .particle-canvas {
-    display: none;
-}
-</style>
-
 <script>
+let currentPublicationSort = 'author';
+let currentPublicationFilter = 'all';
+
 function sortPublications(criteria) {
+    currentPublicationSort = criteria;
     const container = document.getElementById('publications');
     const publications = Array.from(container.getElementsByClassName('publication'));
 
@@ -310,6 +371,10 @@ function sortPublications(criteria) {
 
     publications.forEach(pub => {
         container.appendChild(pub);
+        const tags = (pub.getAttribute('data-tags') || '').split(/\s+/);
+        const isVisible = currentPublicationFilter === 'all' || tags.includes(currentPublicationFilter);
+        pub.hidden = !isVisible;
+
         // Add gray overlay to non-first-author publications
         if (criteria === 'author' && pub.getAttribute('data-author') !== 'Chu-Jie Qin') {
             pub.classList.add('gray-overlay');
@@ -324,6 +389,16 @@ function sortPublications(criteria) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.filter-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            currentPublicationFilter = button.dataset.filter;
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.toggle('active', btn === button);
+            });
+            sortPublications(currentPublicationSort);
+        });
+    });
+
     sortPublications('author');
 });
 
@@ -463,3 +538,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+</body>
+</html>
