@@ -1,0 +1,119 @@
+{
+  "news": [
+    {
+      "date": "2026/03",
+      "html": "One paper has been submitted to ECCV 2026."
+    },
+    {
+      "date": "2026/01",
+      "html": "One paper has been submitted to ICML 2026."
+    },
+    {
+      "date": "2025/10",
+      "html": "Joined DJI as a Research Scientist Intern, focusing on image retouching and aesthetic agents."
+    },
+    {
+      "date": "2025/09",
+      "html": "Received the <b>2025 Outstanding Technical Cooperation Project</b> award from Huawei."
+    },
+    {
+      "date": "2025/10",
+      "html": "<span class=\"italic\">Restore Anything with Masks: Leveraging Mask Image Modeling for Blind All-in-One Image Restoration</span> has been released on <a href=\"https://github.com/DragonisCV/RAM\">Github</a>!"
+    },
+    {
+      "date": "2024/10",
+      "html": "The official code of <span class=\"italic\">Restore Anything with Masks: Leveraging Mask Image Modeling for Blind All-in-One Image Restoration</span> has been released on <a href=\"https://github.com/DragonisCV/RAM\">Github</a>!"
+    },
+    {
+      "date": "2024/07",
+      "html": "One paper got accepted by ECCV 2024!"
+    }
+  ],
+  "researchLine": [
+    {
+      "year": "2024",
+      "kicker": "Foundation",
+      "title": "Mask image modeling for restoration",
+      "text": "Started from blind all-in-one image restoration, using masked reconstruction as a compact route toward stronger degradation representation.",
+      "tags": ["RAM", "All-in-One Restoration"]
+    },
+    {
+      "year": "2024-2025",
+      "kicker": "Robustness",
+      "title": "Adaptive representations under mixed degradations",
+      "text": "Extended restoration representation learning toward adaptive masks, mixed tasks, and out-of-distribution degradation generalization.",
+      "tags": ["RAM++", "Robust Representation"]
+    },
+    {
+      "year": "2024-2025",
+      "kicker": "Computational Photography",
+      "title": "From restoration models to imaging workflows",
+      "text": "Connecting RAW restoration, diffusion prior into practical computational photography systems.",
+      "tags": ["RAW", "Diffusion"]
+    },
+    {
+      "year": "2025-2026",
+      "kicker": "Representation",
+      "title": "Reconstruction-aware visual representations",
+      "text": "Exploring representation autoencoders and reconstruction fidelity as bridges between generative modeling and visual understanding.",
+      "tags": ["LVRAE", "Generative Modeling"]
+    }
+  ],
+  "publications": [
+    {
+      "id": "qin2026lvrae",
+      "title": "Improving Reconstruction of Representation Autoencoder",
+      "authorsHtml": "Siyu Liu*, <span class=\"bold\">Chu-Jie Qin</span>*, Hubery Yin, Qixin Yan, Zheng-Peng Duan, Chen Li, Jing Lyu, Chun-Le Guo, Chongyi Li",
+      "venue": "Arxiv",
+      "year": "2026",
+      "date": "202602",
+      "author": "Chu-Jie Qin",
+      "tags": ["core", "representation"],
+      "teaser": "assets/paper_teaser/lrvae.png",
+      "highlight": false,
+      "links": [
+        { "label": "Project TBD", "href": "https://arxiv.org/abs/2602.08620", "style": "red" },
+        { "label": "Paper", "href": "https://arxiv.org/abs/2602.08620", "style": "red" },
+        { "label": "Code", "href": "https://github.com/modyu-liu/LVRAE", "style": "dark" },
+        { "label": "BibTeX", "href": "bibtex/qin2026lvrae.html", "style": "dark" }
+      ]
+    },
+    {
+      "id": "qin2025ramplus",
+      "title": "RAM++: Robust Representation Learning via Adaptive Mask for All-in-One Image Restoration",
+      "authorsHtml": "Zilong Zhang*, <span class=\"bold\">Chu-Jie Qin</span>*, Chunle Guo, Yong Zhang, Chao Xue, Ming-Ming Cheng, Chongyi Li†",
+      "venue": "Arxiv",
+      "year": "2025",
+      "date": "202509",
+      "author": "Chu-Jie Qin",
+      "tags": ["core", "restoration", "representation"],
+      "teaser": "assets/paper_teaser/ram_plus.png",
+      "highlight": true,
+      "links": [
+        { "label": "Project", "href": "https://DragonisCV.github.io/projects/RAM2.0/index.html", "style": "red" },
+        { "label": "Paper", "href": "https://arxiv.org/abs/2509.12039", "style": "red" },
+        { "label": "Code", "href": "https://github.com/DragonisCV/RAM", "style": "dark" },
+        { "label": "BibTeX", "href": "bibtex/qin2025ramplus.html", "style": "dark" }
+      ]
+    },
+    {
+      "id": "qin2023ram",
+      "title": "Restore Anything with Masks: Leveraging Mask Image Modeling for Blind All-in-One Image Restoration",
+      "authorsHtml": "<span class=\"bold\">Chu-Jie Qin</span>, Rui-Qi Wu, Zikun Liu, Xin Lin, Chun-Le Guo, Hyun Hee Park, Chongyi Li#.",
+      "venue": "ECCV",
+      "year": "2024",
+      "date": "202407",
+      "author": "Chu-Jie Qin",
+      "tags": ["core", "restoration"],
+      "teaser": "assets/paper_teaser/ram.png",
+      "highlight": true,
+      "github": "DragonisCV/RAM",
+      "links": [
+        { "label": "Project", "href": "https://DragonisCV.github.io/projects/RAM/index.html", "style": "red" },
+        { "label": "Paper", "href": "https://arxiv.org/abs/2409.19403", "style": "red" },
+        { "label": "Code", "href": "https://github.com/DragonisCV/RAM", "style": "dark" },
+        { "label": "BibTeX", "href": "bibtex/qin2023ram.html", "style": "dark" }
+      ]
+    }
+  ]
+}
